@@ -1,0 +1,14 @@
+[project]
+name = "python-gha-sample"
+version = "0.1.0"
+description = "Simple Python app with GitHub Actions CI"
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "I"]     # pycodestyle/pyflakes/import sorting
+exclude = ["venv", ".venv", "build", "dist"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
